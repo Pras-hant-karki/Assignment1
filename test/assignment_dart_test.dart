@@ -1,4 +1,4 @@
-import 'package:assignment_dart/assignment_dart.dart';
+import 'package:assignment_dart/assignment_description.dart';
 import 'package:test/test.dart';
 
 void main() {
