@@ -3,9 +3,9 @@ import 'package:assignment_dart/bank_account.dart';
 void main() {
   final bank = Bank();
 
-  final s = SavingsAccount('SA-001', 'Aktar Javed', 1100);
-  final c = CheckingAccount('CA-001', 'Bablu Panwadi', 100);
-  final p = PremiumAccount('PA-001', 'Chacha Choudhry', 18000);
+  final s = SavingsAccount('SA-001', 'Aktar', 1100);
+  final c = CheckingAccount('CA-001', 'Bablu', 100);
+  final p = PremiumAccount('PA-001', 'Chacha', 18000);
 
   bank.createAccount(s);
   bank.createAccount(c);
