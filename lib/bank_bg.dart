@@ -11,18 +11,18 @@ void main() {
   bank.createAccount(c);
   bank.createAccount(p);
 
-  s.withdraw(400); // OK: leaves 600 >= 500
-  s.withdraw(200); // Fails: would leave 400 < 500
-  s.calculateInterest(); // +2% on current balance
+  s.withdraw(400); 
+  s.withdraw(200); 
+  s.calculateInterest(); 
 
-  c.withdraw(150); // Goes negative → overdraft fee applied
-  c.deposit(300);  // Back positive
+  c.withdraw(150); 
+  c.deposit(300);  
 
-  p.withdraw(6000); // OK: leaves 9000? No—fails (min is 10,000)
-  p.withdraw(4000); // OK: leaves 11000
-  p.calculateInterest(); // +5%
+  p.withdraw(6000); 
+  p.withdraw(4000); 
+  p.calculateInterest(); 
 
-  bank.transfer('SA-001', 'CA-001', 300); // Only deposits if withdrawal succeeds
+  bank.transfer('SA-001', 'CA-001', 300); 
 
   bank.generateReport();
 }
